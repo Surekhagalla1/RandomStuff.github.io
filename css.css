@@ -1,0 +1,16 @@
+body{
+    background-color: black;
+}
+h1{
+    color: floralwhite;
+}
+p{
+    text-align: center;
+    color: azure;
+}
+body{
+    color: lightpink;
+}
+#sub{
+    background-color: magenta;
+}
