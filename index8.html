@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #sub{
+        background-color: chartreuse;
+        border-radius: 50px;
+    }
+    body{
+        font-family: fantasy;
+        text-align: center;
+        background-color: aqua;
+        
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Student Grade Checker</h1>
+    <p>This is student grade checker made by Rachana Galla, a 9 year old.</p>
+    <form method = "get" onsubmit="check()">
+        Student's score: <input type="number" id = "ss"><br>
+        Total points: <input type="number" id="Tp"><br>
+        <button type="submit" id = "sub">submit</button>
+    </form>
+    <script>
+         function check(){
+        var a = document.getElementById('ss').value; 
+        var b = document.getElementById('Tp').value;
+        var c = (a/b)*100
+        var c = parseFloat(c)
+         alert("This student scored " +c+"%.")
+        }
+    </script>
+</body>
+</html>
